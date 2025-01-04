@@ -1,0 +1,20 @@
+.box_container {
+    display: flex; 
+    flex-direction: column;
+    height: 50vw;
+    width: 50vw;
+    background-color: aqua;
+}
+
+.square {
+    border-color: black;
+}
+
+.row {
+    display: flex; 
+    flex-direction: row;
+    width: 50%; 
+    padding-bottom: 50%;
+    background-color: blanchedalmond;
+    border-color: black;
+}
