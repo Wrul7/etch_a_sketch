@@ -1,12 +1,7 @@
 let square_per_side = 16;
 
-<<<<<<< HEAD
-const square_num_prompt = document.querySelector(".square_num_prompt");
-const container = document.querySelector(".box_container");
-=======
 let square_num_prompt = document.querySelector(".square_num_prompt");
 let container = document.querySelector(".box_container");
->>>>>>> change_grid_size
 
 function create_grid() {
     for (let i = 1; i <= square_per_side; i++) {
