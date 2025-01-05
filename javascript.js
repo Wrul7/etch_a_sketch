@@ -1,7 +1,7 @@
 let square_per_side = 16;
 
-const square_num_prompt = document.querySelector(".square_num_prompt");
-const container = document.querySelector(".box_container");
+let square_num_prompt = document.querySelector(".square_num_prompt");
+let container = document.querySelector(".box_container");
 
 function create_grid() {
     for (let i = 1; i <= square_per_side; i++) {
@@ -21,8 +21,8 @@ function create_grid() {
 create_grid(); 
 // Keep create_grid function below the container declaration and above squares declaration
 
-const squares = document.querySelectorAll(".square");
-const rows = document.querySelectorAll(".row");
+let squares = document.querySelectorAll(".square");
+let rows = document.querySelectorAll(".row");
 
 /* Pseudocode
 1. Click button
@@ -56,11 +56,10 @@ square_num_prompt.addEventListener("click", () => {
             continue;
         } else {
             square_per_side = square_num;
-            rows.forEach((row) => {
-                container.removeChild(row);
-            });
+            rows.forEach((row) => {row.remove();});
             create_grid();
-
+            squares = document.querySelectorAll(".square");
+            rows = document.querySelectorAll(".row");
             squares.forEach((square) => {
                 square.addEventListener("mouseover", (e) => {
                     e.target.setAttribute("style", "background-color: black;");
