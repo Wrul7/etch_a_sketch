@@ -2,6 +2,7 @@ let square_per_side = 16;
 
 let square_num_prompt = document.querySelector(".square_num_prompt");
 let container = document.querySelector(".box_container");
+let reset_button = document.querySelector(".reset_button");
 
 function create_grid() {
     for (let i = 1; i <= square_per_side; i++) {
@@ -69,6 +70,12 @@ square_num_prompt.addEventListener("click", () => {
         }
     }
 });
+
+
+reset_button.addEventListener("click", () => {
+    squares.forEach((square) => {square.setAttribute("style", "background-color: white;");});
+});
+
 
 squares.forEach((square) => {
     square.addEventListener("mouseover", (e) => {
