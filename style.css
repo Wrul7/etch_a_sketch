@@ -1,11 +1,39 @@
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.options_container {
+    margin: 5px auto;
+    width: fit-content;
+}
+
+.options {
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+    height: 20px;
+}
+
+.options p {
+    margin: 0 20px 0 0;
+}
+
+button {
+    height: fit-content;
+    margin-right: 5px;
+}
+
 .box_container {
     display: flex; 
     flex-direction: column;
-    height: 90vh;
-    width: 90vh;
+    height: 75vh;
+    width: 75vh;
     margin: auto;
-    margin-top: 20px;
-    border: 1px, solid;
+    margin-top: 10px;
+    border: 30px, solid, rgb(248, 71, 71);
 }
 
 .square {
