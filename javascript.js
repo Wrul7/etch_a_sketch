@@ -79,6 +79,9 @@ reset_button.addEventListener("click", () => {
 
 squares.forEach((square) => {
     square.addEventListener("mouseover", (e) => {
-        e.target.setAttribute("style", "background-color: black;");
+        e.target.setAttribute("style", "background-color: (0,0,0,0.1);");
+        let current_opacity = Number(e.target.style.opacity);
+        e.target.style.opacity = current_opacity + 0.1;
+        console.log(current_opacity);
     });
 });
